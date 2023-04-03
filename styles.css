@@ -1,0 +1,151 @@
+
+ 
+ 
+ /* Set default styles for the body */
+ body {
+     padding: 0;
+     margin: 0;
+     background: #f0f0f0;
+ }
+ 
+ /* Center the cards container and set a maximum width */
+ .cards {
+     text-align: center;
+     max-width: 640px;
+     margin: 0 auto;
+ }
+ 
+ /* Set styles for each individual card */
+ .card {
+     position: relative;
+     display: inline-block;
+     width: 172px;
+     height: 240px;
+     font: 16px 'Trebuchet MS';
+     margin: 10px;
+     border-radius: 4px;
+     background: #fff;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+ }
+ 
+ /* Set styles for the text before and after each card */
+ .card:before,
+ .card:after {
+     content: attr(value);
+     position: absolute;
+     width: 12px;
+     text-align: center;
+     letter-spacing: -2px;
+ }
+ 
+ /* Set position for the text before each card */
+ .card:before {
+     top: 4px;
+     left: 4px;
+ }
+ 
+ /* Set position and rotation for the text after each card */
+ .card:after {
+     bottom: 4px;
+     right: 4px;
+     transform: rotate(180deg)
+ }
+ 
+ /* Set styles for the heart suit */
+ .card--heart {
+     color: #e44145;
+ }
+ 
+ /* Set text content for the heart suit */
+ .card--heart:before,
+ .card--heart:after {
+     content: attr(value) ' ♥';
+ }
+ 
+ /* Set styles for the spade suit */
+ .card--spade {
+     color: black;
+ }
+ 
+ /* Set text content for the spade suit */
+ .card--spade:before,
+ .card--spade:after {
+     content: attr(value) ' ♠';
+ }
+ 
+ /* Set styles for the card inner container */
+ .card__inner {
+     box-sizing: border-box;
+     position: absolute;
+     display: flex;
+     justify-content: space-between;
+     top: 24px;
+     left: 24px;
+     right: 24px;
+     bottom: 24px;
+ }
+ 
+ /* Set styles for the centered card */
+ .card--centered {
+     justify-content: center;
+ }
+ 
+ /* Set styles for the column container inside the card */
+ .card__column {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ 
+ /* Set styles for the suit symbol inside the card */
+ .card__symbol {
+     display: inline-block;
+     font-size: 40px ;
+     height: 40px;
+     width: 40px;
+     text-align: center;
+ }
+ 
+ /* Set font size and line height for the suit symbol before each card */
+ .card__symbol .card:before {
+     font-size: 40px;
+     line-height: 40px;
+ }
+ 
+ /* Set content for the heart suit symbol before each card */
+ .card--heart .card:before {
+     content: '♥';
+ }
+ 
+ /* Set content for the spade suit symbol before each card */
+ .card--spade .card:before {
+     content: '♠';
+ }
+ 
+ /* Set rotation for the rotated card and last card */
+ .card--rotated,
+ .card:last-of-type {
+     transform: rotate(180deg);
+ }
+ 
+ /* Set rotation for the first card */
+ .card:first-of-type {
+     transform: rotate(0);
+ }
+ 
+ /* Set size for the big card */
+ .card--big {
+     flex-basis: 60px;
+ }
+ 
+ /* Set size for the huge card */
+ .card--huge {
+     flex-basis: 108px;
+ }
+ 
+ /* Set styles for the title */
+ .title {
+     font: 18px 'Trebuchet MS';
+     color: #444;
+     text-align: center;
+ }
