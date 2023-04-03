@@ -11,7 +11,7 @@
  /* Center the cards container and set a maximum width */
  .cards {
      text-align: center;
-     max-width: 640px;
+     max-width: 1024px;
      margin: 0 auto;
  }
  
@@ -52,7 +52,7 @@
  }
  
  /* Set styles for the heart suit */
- .card--heart {
+ .card--heart, .card--diamond {
      color: #e44145;
  }
  
@@ -63,7 +63,7 @@
  }
  
  /* Set styles for the spade suit */
- .card--spade {
+ .card--spade , .card--club {
      color: black;
  }
  
@@ -73,6 +73,17 @@
      content: attr(value) ' ♠';
  }
  
+/*Set text content for diamonds */
+ .card--diamond:before,
+ .card--diamond:after {
+     content: attr(value) ' ⬥';
+ }
+
+/*Set text content for clubs*/
+ .card--club:before,
+ .card--club:after {
+     content: attr(value) ' ♣';
+ }
  /* Set styles for the card inner container */
  .card__inner {
      box-sizing: border-box;
