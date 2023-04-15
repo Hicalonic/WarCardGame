@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>War Board Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">BoardGame Cards with ♥ ♠ ⬥ ♣</h1>
+
+    <!-- Hearts -->
+    <section class="cards">
+      <!-- Ace -->
+      <section class="card card--heart" value="A">
+        <div class="backcard"></div>
+        <div class="card__inner center-symbol-justify center-symbol-align">
+          <div class="card__column">
+            <div class="card__symbol card--huge"></div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- 2 -->
+      <section class="card card--heart" value="2">
+        <div class="card__inner center-symbol-justify">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__column">
+              <div class="card__symbol"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 -->
+      <section class="card card--heart" value="3">
+        <div class="card__inner center-symbol-justify">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="card card--heart" value="4">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <section class="card card--heart" value="5">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6 -->
+      <section class="card card--heart" value="6">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 -->
+      <section class="card card--heart" value="7">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 -->
+      <section class="card card--heart" value="8">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-align justify-space-around">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 -->
+      <section class="card card--heart" value="9">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 -->
+      <section class="card card--heart" value="10">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-align justify-space-around">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Spades -->
+    <section class="cards">
+      <!-- Ace -->
+      <section class="card card--spade" value="A">
+        <div class="card__inner center-symbol-justify center-symbol-align">
+          <div class="card__column">
+            <div class="card__symbol card--huge"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 2 -->
+      <section class="card card--spade" value="2">
+        <div class="card__inner center-symbol-justify">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__column">
+              <div class="card__symbol"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 -->
+      <section class="card card--spade" value="3">
+        <div class="card__inner center-symbol-justify">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="card card--spade" value="4">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <section class="card card--spade" value="5">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6 -->
+      <section class="card card--spade" value="6">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 -->
+      <section class="card card--spade" value="7">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 -->
+      <section class="card card--spade" value="8">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-align justify-space-around">
+            <div class="card__symbol card__symbol--big"></div>
+            <div class="card__symbol card__symbol--big"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 -->
+      <section class="card card--spade" value="9">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 -->
+      <section class="card card--spade" value="10">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-align justify-space-around">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Clubs -->
+    <section class="cards">
+      <!-- Ace -->
+      <section class="card card--club" value="A">
+        <div class="card__inner center-symbol-justify center-symbol-align">
+          <div class="card__column">
+            <div class="card__symbol card--huge"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 2 -->
+      <section class="card card--club" value="2">
+        <div class="card__inner center-symbol-justify">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__column">
+              <div class="card__symbol"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 -->
+      <section class="card card--club" value="3">
+        <div class="card__inner center-symbol-justify">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="card card--club" value="4">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <section class="card card--club" value="5">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6 -->
+      <section class="card card--club" value="6">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 -->
+      <section class="card card--club" value="7">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 -->
+      <section class="card card--club" value="8">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-align justify-space-around">
+            <div class="card__symbol card__symbol--big"></div>
+            <div class="card__symbol card__symbol--big"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 -->
+      <section class="card card--club" value="9">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 -->
+      <section class="card card--club" value="10">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-align justify-space-around">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Diamonds -->
+    <section class="cards">
+      <!-- Ace -->
+      <section class="card card--diamond" value="A">
+        <div class="card__inner center-symbol-justify center-symbol-align">
+          <div class="card__column">
+            <div class="card__symbol card--huge"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 2 -->
+      <section class="card card--diamond" value="2">
+        <div class="card__inner center-symbol-justify">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__column">
+              <div class="card__symbol"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 -->
+      <section class="card card--diamond" value="3">
+        <div class="card__inner center-symbol-justify">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="card card--diamond" value="4">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <section class="card card--diamond" value="5">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6 -->
+      <section class="card card--diamond" value="6">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 -->
+      <section class="card card--diamond" value="7">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 -->
+      <section class="card card--diamond" value="8">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-align justify-space-around">
+            <div class="card__symbol card__symbol--big"></div>
+            <div class="card__symbol card__symbol--big"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 -->
+      <section class="card card--diamond" value="9">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-justify">
+            <div class="card__symbol card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 -->
+      <section class="card card--diamond" value="10">
+        <div class="card__inner">
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column center-symbol-align justify-space-around">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+          <div class="card__column">
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+            <div class="card__symbol"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+          <div class="card--heart topcard" value="A"></div>
+          <div class="midcard"></div>
+          <div class="card--heart bottomcard" value="A"></div>
+          </div>
+          <div class="flip-card-back"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

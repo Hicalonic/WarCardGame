@@ -1,0 +1,272 @@
+/* Set default styles for the body */
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(236, 237, 238)
+   
+}
+
+/* Center the cards container and set a maximum width */
+.cards {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    perspective: 1000px;
+    
+}
+
+/* Set styles for each individual card */
+.card {
+    position: relative;
+    display: inline-block;
+    width: 172px;
+    height: 240px;
+    font: 16px 'Trebuchet MS';
+    margin: 10px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    transform-style: preserve-3d; 
+    /* backface-visibility: hidden; */
+}
+
+/* Set styles for the text before and after each card */
+.card:before,
+.card:after {
+    content: attr(value);
+    position: absolute;
+    width: 12px;
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+/* Set position for the text before each card */
+.card:before {
+    top: 4px;
+    left: 4px;
+}
+
+/* Set position and rotation for the text after each card */
+.card:after {
+    bottom: 4px;
+    right: 4px;
+    transform: rotate(180deg)
+}
+
+/* Set styles for the heart suit */
+.card--heart, .card--diamond {
+    color: #e44145;
+}
+
+.card--heart .card__symbol:before {
+    content: '♥';
+}
+
+.card--club .card__symbol:before {
+    content: '♣';
+}
+.card--diamond .card__symbol:before {
+    content: '♦';
+}
+.card--spade .card__symbol:before {
+    content: '♠';
+}
+
+/* Set styles for the spade suit */
+.card--spade, .card--club {
+    color: black;
+}
+
+
+
+
+/* Set text content for the heart suit */
+.card--heart:before,
+.card--heart:after {
+    content: attr(value) ' ♥';
+}
+
+.card--spade:before,
+.card--spade:after {
+    content: attr(value) ' ♠';
+}
+
+.card--diamond:before,
+.card--diamond:after {
+    content: attr(value) ' ♦';
+}
+.card--club:before,
+.card--club:after {
+    content: attr(value) ' ♣';
+}
+
+/* Set styles for the card inner container */
+.card__inner {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+}
+
+
+.card__inner .card--centered{
+    justify-content: center;
+    align-items: center;
+}
+
+/* Set styles for the column container inside the card */
+.card__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Set styles for the suit symbol inside the card */
+.card__symbol {
+    display: inline-block;
+    font-size: 40px ;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+
+/* Set font size and line height for the suit symbol before each card */
+/* .card__symbol .card:before {
+    font-size: 40px;
+    line-height: 40px;
+} */
+
+
+
+/* Set size for the huge card */
+.card--huge {
+    font-size: 80px;
+    height: 80px;
+    width: 80px;
+}
+
+/* Set styles for the title */
+.title {
+    font: 18px 'Lato', sans-serif;
+    color: #444;
+    text-align: center;
+}
+
+
+.center-symbol-justify {
+    justify-content: center;
+}
+.center-symbol-align {
+    align-items: center;
+}
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.card:hover{
+    cursor: pointer;
+    transition: transform 1500ms;
+    transform: rotateY(180deg);
+  }
+
+  .backcard{
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition-delay: 0.5s;
+  }
+
+  .backcard:hover, .backcard:focus {
+    background-color: #025949;
+    z-index:2;
+  }
+
+  /* .card__inner:hover .backcard {
+    background-color: #025949;
+    z-index: 2;
+  } */
+
+
+  /* .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .card2 { 
+    position: relative;
+    display: inline-block;
+    width: 172px;
+    height: 240px;
+    font: 16px 'Trebuchet MS';
+    margin: 10px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    transform-style: preserve-3d; 
+    perspective: 1000px;
+  } */
+
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 172px;
+    height: 240px;
+    font: 16px 'Trebuchet MS';
+    margin: 10px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    transform-style: preserve-3d; 
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  

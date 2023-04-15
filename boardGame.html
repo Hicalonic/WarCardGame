@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoardGame</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="board.css" />
+
+    <!-- <script src="script.js"></script> -->
+  </head>
+  <header class="header">
+    <a href="" class="logo">War Game</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu">
+      <li><a href="#">Game</a></li>
+      <li><a href="#">Cards</a></li>
+      <li><a href="#">Link #3</a></li>
+      <li><a href="#">Link #4</a></li>
+    </ul>
+  </header>
+  <body>
+    <div class="container">
+      <div class="playerOne">
+        <h3 class="title">Player one Deck</h3>
+        <section class="card">
+          <div class="backcard"></div>
+        </section>
+        <h4 id="scoreOne" class="title"></h4>
+      </div>
+      <div class="playerTwo">
+        <h3 class="title">Player Two Deck</h3>
+        <section class="card">
+          <div class="backcard"></div>
+        </section>
+        <h4 id="scoreTwo" class="title"></h4>
+      </div>
+      <div class="p2attempt" id="p2at">
+        <div id="p2normal">
+          <h3 class="title">Player 2 Attempt</h3>
+          <div id="p2card"></div>
+        </div>
+        <div id="p2war"><p id="pattempt1"class="pattempt">PLAYER 2 WARRRRRR</p>
+         
+          <div class="warback" style="z-index: -3; left: 10px"></div>
+          <div class="warback" style="z-index: -2; left: 30px"></div>
+          <div class="warback" style="z-index: -1; left: 50px"></div>
+          <div id="warf2"></div>
+        </div>
+      </div>
+      <div class="p1attempt" id="p1at">
+        <div id="p1normal">
+          <h3 class="title" >Player 1 Attempt</h3>
+          <div id="p1card"></div>
+        </div>
+        <div id="p1war"><p id="pattempt2" class="pattempt">PLAYER 1 WARRRRRR</p>
+          <div class="warback" style="z-index: -3; left: 10px"></div>
+          <div class="warback" style="z-index: -2; left: 30px"></div>
+          <div class="warback" style="z-index: -1; left: 50px"></div>
+          <div id="warf1"></div>
+        </div>
+      </div>
+    </div>
+    <div id ="warMessage">
+      <div id="warText"></div>
+    </div>
+    <div class="button-container">
+      <button id="newGame" class="custom-btn btn-13"  onclick="location.reload()">Start New Game</button>
+    </div>
+    <div id="warContainer">
+      <button id="buttonWar" onclick="warButton()" class="custom-btn btn-13 innerMargin">
+        War Button
+      </button>
+      <button id="buttonResume" onclick="play()" class="custom-btn btn-13 innerMargin">
+        Resume
+      </button>
+      
+    </div>
+    <div id="buttonContainer" class="button-container">
+      <button id="button" onclick="play()" class="custom-btn btn-13">
+        Click here to do the magic
+      </button>
+      <p id="push"></p>
+    </div>
+  </body>
+  <script type="text/javascript" src="card.js"></script>
+</html>
